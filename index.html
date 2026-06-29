@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Ceci ✨</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ffd6ea,#ffeecf);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.container{
+    text-align:center;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    width:90%;
+    max-width:500px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#ff4b87;
+    margin-bottom:20px;
+}
+
+.slider{
+    position:relative;
+}
+
+.slider img{
+    width:100%;
+    border-radius:18px;
+}
+
+.caption{
+    margin-top:12px;
+    font-size:20px;
+    font-weight:bold;
+    color:#444;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 25px;
+    border:none;
+    border-radius:50px;
+    background:#ff4b87;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    transform:scale(1.06);
+}
+
+.popup{
+    display:none;
+    margin-top:20px;
+    padding:18px;
+    background:#fff3f8;
+    border-radius:15px;
+}
+
+.popup p{
+    color:#444;
+    margin-bottom:10px;
+}
+
+.open{
+    display:block;
+}
+
+.wa{
+    display:inline-block;
+    text-decoration:none;
+    background:#25D366;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+    <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1>🎉 horee ceci udah bersih bersih rumah 🎉</h1>
+
+<div class="slider">
+    <img src="ace.png" alt="Ace">
+    <div class="caption">
+        ini namanya ace
+    </div>
+</div>
+
+<button onclick="showThanks()">
+    coba pencet
+</button>
+
+<div class="popup" id="popup">
+    <p>💌 terimakasih shafiq yang baik hati</p>
+
+    <a
+        class="wa"
+        href="https://wa.me/6282261195070?text=Halo%20aku%20udah%20pencet%20webnya%20😔"
+        target="_blank">
+        lanjut ke WhatsApp
+    </a>
+</div>
+
+</div>
+
+<script>
+function showThanks(){
+    document
+        .getElementById("popup")
+        .classList.add("open");
+}
+</script>
+
+</body>
+</html>
